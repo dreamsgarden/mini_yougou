@@ -1,0 +1,123 @@
+page {
+  background-color: #edece8;
+}
+.user_warp {
+  position: relative;
+  height: 45vh;
+  background-color: var(--themeColor);
+  overflow: hidden;
+
+  // 用户头像
+  .user_img {
+    margin: -30rpx;
+    .bg {
+      height: 50vh;
+      filter: blur(10rpx);
+    }
+
+    // 头像
+    .user_info {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+
+      .avator {
+        width: 150rpx;
+        height: 150rpx;
+        border-radius: 50%;
+      }
+      .user_name {
+        margin-top: 40rpx;
+        color: #fff;
+        font-size: 36rpx;
+      }
+    }
+  }
+  // 登录
+  .btn {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%);
+    color: #fff;
+    border: 1px solid #179c16;
+    padding: 16rpx 48rpx;
+    border-radius: 8rpx;
+    font-weight: 700;
+  }
+}
+.user_content {
+  position: relative;
+  .main {
+    position: absolute;
+    width: 90%;
+    left: 50%;
+    top: -40rpx;
+    transform: translateX(-50%);
+    color: #666;
+    padding-bottom: 100rpx;
+
+    // 浏览历史
+    .histort_warp {
+      display: flex;
+      justify-content: space-evenly;
+      text-align: center;
+      padding: 12rpx 0;
+      background-color: #fff;
+
+      .hist_num {
+        color: var(--themeColor);
+      }
+    }
+
+    // 订单
+    .order_warp {
+      padding: 12rpx 0;
+      background-color: #fff;
+      margin-top: 15rpx;
+      .title {
+        padding: 15rpx;
+        border-bottom: 1px solid #ccc;
+        font-size: 32rpx;
+      }
+      .item {
+        margin-top: 8rpx;
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        .iconfont {
+          color: var(--themeColor);
+        }
+      }
+    }
+    // 收货地址
+    .address {
+      display: flex;
+      justify-content: space-between;
+      padding: 12rpx;
+      background-color: #fff;
+      margin-top: 15rpx;
+    }
+    // 应用信息
+    .app_info {
+      background-color: #fff;
+      margin-top: 15rpx;
+      .item {
+        padding: 12rpx;
+        border-bottom: 1px solid #ccc;
+      }
+      .contact {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    // 推荐
+    .recommend {
+      padding: 12rpx;
+      background-color: #fff;
+      margin-top: 15rpx;
+    }
+  }
+}

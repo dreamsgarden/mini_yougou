@@ -1,0 +1,98 @@
+page {
+  padding-bottom: 90rpx;
+}
+.goods_detail {
+  /* 轮播图 */
+  /* 价格 */
+  /* 介绍 */
+  /* 图文详情 */
+  /* 工具栏 */
+}
+.goods_detail .detai_swiper swiper {
+  height: 65vw;
+  text-align: center;
+}
+.goods_detail .detai_swiper swiper image {
+  width: 60%;
+}
+.goods_detail .goods_price {
+  padding: 15rpx;
+  color: var(--themeColor);
+  font-size: 32rpx;
+  font-weight: 600;
+}
+.goods_detail .goods_row {
+  display: flex;
+  border-top: 5rpx solid #dedede;
+  border-bottom: 5rpx solid #dedede;
+  padding: 10rpx 0;
+}
+.goods_detail .goods_row .goods_name {
+  flex: 5;
+  padding: 0 10rpx;
+  color: #000;
+  font-size: 30rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.goods_detail .goods_row .goods_collect {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid #000;
+}
+.goods_detail .goods_row .goods_collect .icon-favorfill {
+  color: orangered;
+}
+.goods_detail .goods_info .title {
+  padding: 20rpx;
+  color: var(--themeColor);
+  font-size: 36rpx;
+  font-weight: 600;
+}
+.goods_detail .tool {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 90rpx;
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+  display: flex;
+  z-index: 1;
+}
+.goods_detail .tool .tool_item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 24rpx;
+  position: relative;
+}
+.goods_detail .tool .tool_item button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.goods_detail .tool .btn_cart {
+  flex: 2;
+  background-color: #ffa500;
+  color: #fff;
+  font-size: 30rpx;
+  font-weight: 600;
+}
+.goods_detail .tool .btn_by {
+  flex: 2;
+  background-color: var(--themeColor);
+  color: #fff;
+  font-size: 30rpx;
+  font-weight: 600;
+}

@@ -1,0 +1,48 @@
+page {
+  background-color: #f3f4f6;
+}
+.collect .collect_main .title {
+  padding: 20rpx 0;
+  display: flex;
+}
+.collect .collect_main .title .tips {
+  padding: 10rpx 20rpx;
+  border: 1px solid #ccc;
+  margin-left: 20rpx;
+}
+.collect .collect_main .title .tips.active {
+  color: var(--themeColor);
+  border-color: var(--themeColor);
+}
+.collect .collect_main .goods_warp .goods_item {
+  display: flex;
+  background-color: #fff;
+  margin-top: 20rpx;
+  /* 商品图片 */
+  /* 商品信息 */
+}
+.collect .collect_main .goods_warp .goods_item .goods_img_warp {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.collect .collect_main .goods_warp .goods_item .goods_img_warp image {
+  width: 70%;
+}
+.collect .collect_main .goods_warp .goods_item .goods_info_warp {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.collect .collect_main .goods_warp .goods_item .goods_info_warp .goods_name {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.collect .collect_main .goods_warp .goods_item .goods_info_warp .goods_price {
+  color: var(--themeColor);
+  font-size: 32rpx;
+}

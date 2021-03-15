@@ -1,0 +1,109 @@
+page {
+  background-color: #edece8;
+}
+.user_warp {
+  position: relative;
+  height: 45vh;
+  background-color: var(--themeColor);
+  overflow: hidden;
+}
+.user_warp .user_img {
+  margin: -30rpx;
+}
+.user_warp .user_img .bg {
+  height: 50vh;
+  filter: blur(10rpx);
+}
+.user_warp .user_img .user_info {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.user_warp .user_img .user_info .avator {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+.user_warp .user_img .user_info .user_name {
+  margin-top: 40rpx;
+  color: #fff;
+  font-size: 36rpx;
+}
+.user_warp .btn {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translateX(-50%);
+  color: #fff;
+  border: 1px solid #179c16;
+  padding: 16rpx 48rpx;
+  border-radius: 8rpx;
+  font-weight: 700;
+}
+.user_content {
+  position: relative;
+}
+.user_content .main {
+  position: absolute;
+  width: 90%;
+  left: 50%;
+  top: -40rpx;
+  transform: translateX(-50%);
+  color: #666;
+  padding-bottom: 100rpx;
+}
+.user_content .main .histort_warp {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 12rpx 0;
+  background-color: #fff;
+}
+.user_content .main .histort_warp .hist_num {
+  color: var(--themeColor);
+}
+.user_content .main .order_warp {
+  padding: 12rpx 0;
+  background-color: #fff;
+  margin-top: 15rpx;
+}
+.user_content .main .order_warp .title {
+  padding: 15rpx;
+  border-bottom: 1px solid #ccc;
+  font-size: 32rpx;
+}
+.user_content .main .order_warp .item {
+  margin-top: 8rpx;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.user_content .main .order_warp .item .iconfont {
+  color: var(--themeColor);
+}
+.user_content .main .address {
+  display: flex;
+  justify-content: space-between;
+  padding: 12rpx;
+  background-color: #fff;
+  margin-top: 15rpx;
+}
+.user_content .main .app_info {
+  background-color: #fff;
+  margin-top: 15rpx;
+}
+.user_content .main .app_info .item {
+  padding: 12rpx;
+  border-bottom: 1px solid #ccc;
+}
+.user_content .main .app_info .contact {
+  display: flex;
+  justify-content: space-between;
+}
+.user_content .main .recommend {
+  padding: 12rpx;
+  background-color: #fff;
+  margin-top: 15rpx;
+}

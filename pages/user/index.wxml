@@ -1,0 +1,74 @@
+<view class="user_warp">
+  <!-- 用户信息 -->
+  <view class="user_img" wx:if="{{userInfo.nickName}}">
+    <image class="bg" src="{{userInfo.avatarUrl}}"></image>
+    <view class="user_info">
+      <image class="avator" src="{{userInfo.avatarUrl}}"></image>
+      <view class="user_name">{{userInfo.nickName}}</view>
+    </view>
+  </view>
+  <!-- 登录 -->
+  <navigator wx:else url="/pages/login/index" class="btn">登录</navigator>
+</view>
+<view class="user_content">
+  <view class="main">
+    <!-- 浏览历史 -->
+    <view class="histort_warp">
+      <navigator>
+        <view class="hist_num">0</view>
+        <view class="hist_name">收藏的店铺</view>
+      </navigator>
+      <navigator url="/pages/collect/index">
+        <view class="hist_num">{{collectNum}}</view>
+        <view class="hist_name">收藏的商品</view>
+      </navigator>
+      <navigator>
+        <view class="hist_num">0</view>
+        <view class="hist_name">关注的商品</view>
+      </navigator>
+      <navigator>
+        <view class="hist_num">0</view>
+        <view class="hist_name">我的足迹</view>
+      </navigator>
+    </view>
+    <!-- 订单状态 -->
+    <view class="order_warp">
+      <view class="title">我的订单</view>
+      <view class="item">
+        <navigator url="/pages/order/index?type=1">
+          <view class="iconfont icon-calendar"></view>
+          <view>全部订单</view>
+        </navigator>
+        <navigator url="/pages/order/index?type=2">
+          <view class="iconfont icon-fukuantongzhi"></view>
+          <view>待付款</view>
+        </navigator>
+        <navigator url="/pages/order/index?type=3">
+          <view class="iconfont icon-deliver"></view>
+          <view>待收货</view>
+        </navigator>
+        <navigator>
+          <view class="iconfont icon-tuikuan1"></view>
+          <view>退款/退货</view>
+        </navigator>
+      </view>
+    </view>
+    <!-- 收货地址 -->
+    <view class="address">
+      <view>收货地址管理</view>
+    </view>
+    <!-- 应用信息 -->
+    <view class="app_info">
+      <view class="item contact">
+        <text>联系客服</text>
+        <text>400-618-4000</text>
+      </view>
+      <navigator url="/pages/feedback/index" class="item">意见反馈</navigator>
+      <view class="item">关于我们</view>
+    </view>
+    <!-- 推荐 -->
+    <view class="recommend">
+      <view>把应用推荐给别人</view>
+    </view>
+  </view>
+</view>

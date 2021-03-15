@@ -1,0 +1,33 @@
+page {
+  background-color: #f3f5f6;
+  padding: 20rpx;
+}
+.search .goods_search {
+  display: flex;
+  height: 90rpx;
+  padding: 10rpx 20rpx;
+}
+.search .goods_search input {
+  flex: 5;
+  padding: 16rpx 40rpx;
+  background-color: #fff;
+}
+.search .goods_search button {
+  flex: 1;
+  margin-left: 20rpx;
+  background-color: #fff;
+  font-weight: 500;
+  font-size: 32rpx;
+}
+.search .goods_list {
+  margin-top: 30rpx;
+}
+.search .goods_list .item {
+  background-color: #fff;
+  font-size: 26rpx;
+  padding: 15rpx 10rpx;
+  border-bottom: 1px solid #ccc;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
